@@ -90,3 +90,7 @@ Custom Exceptions:
 Custom Sorter:
 
     Sort the drivers by the miles driven
+
+Run Tests:
+
+    The test folder under src contains all the unit test cases.
