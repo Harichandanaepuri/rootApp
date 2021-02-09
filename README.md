@@ -91,6 +91,10 @@ Custom Sorter:
 
     Sort the drivers by the miles driven
 
+Sample input files:
+    
+    The tst-resources folder under src/test contains the files to test various scenarios.
+
 Run Tests:
 
     The test folder under src contains all the unit test cases.
