@@ -46,7 +46,7 @@ What is the process?
 
     1.  Before coding, I looked into the problem statement and identified 2 entities namely Driver and Trip. 
 
-    There is 1-many relationship between driver and trips ie., each trip is associated to a driver and driver can take multiple trips.  To keep this relationship intact there is an attribute in Driver entity which captures list of valid Trips driver has taken. Similarly, trip contains an attribute called 'driver-name' which tells about the driver who has taken the trip.
+        There is 1-many relationship between driver and trips ie., each trip is associated to a driver and driver can take multiple trips.  To keep this relationship intact there is an attribute in Driver entity which captures list of valid Trips driver has taken. Similarly, trip contains an attribute called 'driver-name' which tells about the driver who has taken the trip.
 
     2. Driver entity have following instance variables
         1. List of trips
@@ -61,7 +61,7 @@ What is the process?
         
     4. We  add a trip to trips taken by driver only when trip is valid and while adding trip, increment miles driver has driven by trip miles amount and time travelled to trip time amount. (calculated on fly). To facilite this addTrip or addTrips to driver there are 2 methods in Driver entity namely addTrip(), addTrips().
     
-How should we construct the drivers and trips entities from the input?
+Construction of entities from the input and code flow?
 
     0. We store two maps 
         a) fetch drivers by driverName and fetch List<Trips> by driver name. Reason we are maintaining two maps is that we dont want to missout info on drivers/trips, example in file input if we have trips and then driver.
